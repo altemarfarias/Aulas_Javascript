@@ -21,16 +21,12 @@
     <h2>Olá Mundo,</h2>    <!-- Isso é um comentário no HTML -->
     <h1>Jesus é Bom!</h1>
     <script>
-        // Isso é um comentario em JAVASCRIPT
-        // comentário em unma unica linha
-        /*
-            comentarios 
-            em várias 
-            linhas
-        */
-        var name = window.prompt('Qual é Seu Nome?')
-        window.alert('É um prazer em te conhecer, ' + name + '!') 
-        // Usamos o sinal de + (mais) para concatenar, veja exemplo acima
+        var n1 = Number.parseInt(window.prompt('Digite um numeor: '))    // Recebe String e transforma em inteiro
+        var n2 = Number.parseInt(window.prompt('Digite outro numero: ')) // da mesma forma
+        // no caso acima poderia ser também um Float "Number.parseFloat", numero fracionado  
+        // se omitirmos as declarações ".parseInt" ou "parseFloat", vai valer para ambos Number()     
+        var s  = n1 + n2
+        window.alert('A soma dos dois numeros é: ' + s)
     </script>
 </body>
 </html>
